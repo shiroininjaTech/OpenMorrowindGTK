@@ -1,0 +1,41 @@
+[Icon Theme]
+Name=OpenMWind Icons v3
+Comment=Original fantasy-inspired bronze and parchment icons for Cinnamon
+Inherits=Papirus-Dark,Adwaita,hicolor
+Directories=scalable/places,scalable/apps,scalable/mimetypes,64x64/places,64x64/apps,64x64/mimetypes
+
+[scalable/places]
+Size=48
+Type=Scalable
+MinSize=16
+MaxSize=256
+Context=Places
+
+[scalable/apps]
+Size=48
+Type=Scalable
+MinSize=16
+MaxSize=256
+Context=Applications
+
+[scalable/mimetypes]
+Size=48
+Type=Scalable
+MinSize=16
+MaxSize=256
+Context=MimeTypes
+
+[64x64/places]
+Size=64
+Type=Fixed
+Context=Places
+
+[64x64/apps]
+Size=64
+Type=Fixed
+Context=Applications
+
+[64x64/mimetypes]
+Size=64
+Type=Fixed
+Context=MimeTypes
