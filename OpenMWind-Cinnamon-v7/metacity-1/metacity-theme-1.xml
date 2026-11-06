@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<metacity_theme>
+<info><name>OpenMWind Cinnamon v5</name><author>OpenMWind community theme</author><copyright>Original theme artwork, 2026</copyright><date>2026-11-05</date><description>Brass and dark stone window borders</description></info>
+<frame_geometry name="normal" has_title="true" rounded_top_left="false" rounded_top_right="false">
+<distance name="left_width" value="8"/><distance name="right_width" value="8"/><distance name="bottom_height" value="8"/><distance name="left_titlebar_edge" value="9"/><distance name="right_titlebar_edge" value="9"/><distance name="title_vertical_pad" value="8"/><distance name="button_width" value="24"/><distance name="button_height" value="22"/><distance name="title_border" value="3"/>
+<border name="title_border" left="4" right="4" top="2" bottom="2"/>
+<border name="button_border" left="1" right="1" top="1" bottom="1"/>
+</frame_geometry>
+<frame_geometry name="border" has_title="false" parent="normal"/>
+<draw_ops name="frame">
+<rectangle color="#18140e" x="0" y="0" width="width" height="height" filled="true"/>
+<rectangle color="#ad8649" x="0" y="0" width="width-1" height="height-1" filled="false"/>
+<rectangle color="#e2bd78" x="2" y="2" width="width-5" height="height-5" filled="false"/>
+<rectangle color="#584125" x="4" y="4" width="width-9" height="height-9" filled="false"/>
+<image filename="weathered-bronze.png" x="5" y="5" width="width-10" height="title_height-1" alpha="1"/>
+<line color="#e5c17c" x1="5" y1="5" x2="width-6" y2="5"/>
+<line color="#a77d44" x1="5" y1="title_height+4" x2="width-6" y2="title_height+4"/>
+</draw_ops>
+<draw_ops name="title"><title color="#f4d99f" x="(width - title_width) / 2" y="(title_height - title_height / 2) + 3"/></draw_ops>
+<draw_ops name="button"><rectangle color="#bd9557" x="0" y="0" width="width-1" height="height-1" filled="false"/><gradient type="vertical" x="2" y="2" width="width-4" height="height-4"><color value="#71522f"/><color value="#292017"/></gradient></draw_ops>
+<draw_ops name="close"><include name="button"/><line color="#f3d39a" x1="7" y1="6" x2="width-8" y2="height-7"/><line color="#f3d39a" x1="width-8" y1="6" x2="7" y2="height-7"/></draw_ops>
+<draw_ops name="minimize"><include name="button"/><line color="#f3d39a" x1="7" y1="height-8" x2="width-8" y2="height-8"/></draw_ops>
+<draw_ops name="maximize"><include name="button"/><rectangle color="#f3d39a" x="7" y="6" width="width-15" height="height-13" filled="false"/></draw_ops>
+<frame_style name="normal" geometry="normal">
+<piece position="entire_background" draw_ops="frame"/><piece position="title" draw_ops="title"/>
+<button function="close" state="normal" draw_ops="close"/><button function="close" state="pressed" draw_ops="close"/><button function="close" state="prelight" draw_ops="close"/>
+<button function="minimize" state="normal" draw_ops="minimize"/><button function="minimize" state="pressed" draw_ops="minimize"/><button function="minimize" state="prelight" draw_ops="minimize"/>
+<button function="maximize" state="normal" draw_ops="maximize"/><button function="maximize" state="pressed" draw_ops="maximize"/><button function="maximize" state="prelight" draw_ops="maximize"/>
+<button function="unmaximize" state="normal" draw_ops="maximize"/><button function="unmaximize" state="pressed" draw_ops="maximize"/><button function="unmaximize" state="prelight" draw_ops="maximize"/>
+</frame_style>
+<frame_style_set name="normal"><frame focus="yes" state="normal" resize="both" style="normal"/><frame focus="no" state="normal" resize="both" style="normal"/><frame focus="yes" state="maximized" style="normal"/><frame focus="no" state="maximized" style="normal"/><frame focus="yes" state="shaded" style="normal"/><frame focus="no" state="shaded" style="normal"/></frame_style_set>
+<window type="normal" style_set="normal"/><window type="dialog" style_set="normal"/><window type="modal_dialog" style_set="normal"/><window type="utility" style_set="normal"/><window type="menu" style_set="normal"/><window type="border" style_set="normal"/>
+<menu_icon function="close" state="normal" draw_ops="close"/><menu_icon function="maximize" state="normal" draw_ops="maximize"/><menu_icon function="minimize" state="normal" draw_ops="minimize"/><menu_icon function="unmaximize" state="normal" draw_ops="maximize"/>
+</metacity_theme>

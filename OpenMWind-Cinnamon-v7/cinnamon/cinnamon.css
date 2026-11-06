@@ -1,0 +1,37 @@
+/* OpenMWind v2: Cinnamon shell styling. Original artwork, no game assets. */
+stage { color: #dfc38d; font-family: serif; font-size: 10pt; }
+#panel { background-color: #17140f; background-gradient-direction: vertical; background-gradient-start: #4b3922; background-gradient-end: #17140f; border-top: 2px solid #c19a57; border-bottom: 1px solid #6c502d; box-shadow: inset 0 1px #f1d396; color: #e4c992; }
+.panel-top, .panel-bottom, .panel-left, .panel-right { color: #e4c992; }
+.panel-button { color: #ead1a1; border: 1px solid transparent; border-radius: 0; padding: 2px 7px; }
+.panel-button:hover, .panel-button:active, .panel-button:checked { background-color: #6b4c29; border-color: #bb9352; color: #fff0c7; }
+.panel-status-button { color: #ead1a1; }
+.popup-menu { color: #e5cb96; }
+.popup-menu-content, .menu, .applet-popup-menu { background-color: #181611; background-gradient-direction: vertical; background-gradient-start: #30271b; background-gradient-end: #171510; border: 3px solid #ad874b; border-radius: 0; box-shadow: inset 0 0 0 1px #e0ba72, 0 5px 12px 3px rgba(0,0,0,.65); padding: 7px; }
+.popup-menu-item { border-radius: 0; padding: 5px 9px; color: #e4c68e; }
+.popup-menu-item:active, .popup-menu-item:hover, .popup-menu-item:checked { background-color: #6c512f; color: #fff0c2; }
+.popup-separator-menu-item { background-color: #86683b; height: 1px; }
+.popup-menu-arrow { color: #cda567; }
+.menu-favorites-box, .menu-places-box { padding: 5px; }
+.menu-category-button, .menu-application-button { border-radius: 0; padding: 5px 8px; color: #ddc18c; }
+.menu-category-button-selected, .menu-application-button-selected, .menu-category-button:hover, .menu-application-button:hover { background-color: #69502e; color: #ffe9b6; }
+.menu-search-entry, .menu-search-entry:focus, .popup-menu StEntry, StEntry { background-color: #100f0d; color: #f2d7a1; border: 2px solid #aa8548; border-radius: 0; selection-background-color: #806238; selected-color: #fff0c8; padding: 5px; }
+.notification, .notification-body, .notification-banner, .osd-window, .modal-dialog, .end-session-dialog { background-color: #201b15; color: #e5c895; border: 2px solid #b28b4e; border-radius: 0; }
+.modal-dialog-button, .notification-button, .sound-player-overlay StButton { background-color: #47341f; color: #f0d29a; border: 2px solid #b18b4c; border-radius: 0; }
+.modal-dialog-button:hover, .notification-button:hover { background-color: #755633; }
+.workspace-osd, .window-list-item-box { color: #ead09b; }
+.window-list-item-box:hover, .window-list-item-box:active { background-color: #6b4d2b; border: 1px solid #b38a4c; border-radius: 0; }
+#overview, #expo { background-color: #191611; }
+
+/* v3: antique manuscript type and visibly carved panels */
+stage { font-family: "EB Garamond", "Liberation Serif", serif; font-size: 12pt; }
+#panel { background-image: url("../assets/panel-patina.png"); background-size: auto 100%; border-top: 2px solid #ebc681; }
+.popup-menu-content, .menu, .applet-popup-menu, .modal-dialog, .notification { background-color: #14120e; border: 7px solid #a37c40; border-image: url("../assets/engraved-frame.png") 32 / 7px stretch; border-radius: 0; }
+.popup-menu-item, .menu-category-button, .menu-application-button { font-family: "EB Garamond", "Liberation Serif", serif; font-size: 12pt; }
+.menu-category-button-selected, .menu-application-button-selected, .popup-menu-item:active { background-color: #76572f; border: 1px solid #d1a762; }
+
+/* v6: compact Morrowind-inspired panel. Tested syntactically, not on Cinnamon runtime. */
+#panel { background-image: url("../assets/panel-patina.png"); background-repeat: repeat-x; background-size: auto 100%; background-color: #241b13; border-top: 2px solid #d2a761; border-bottom: 1px solid #70502d; color: #f0d8a8; }
+.panel-button { border-radius: 0; border: 1px solid transparent; color: #f0d8a8; padding: 2px 5px; }
+.panel-button:hover, .panel-button:active, .panel-button:checked { background-color: #4a3622; border: 1px solid #b99355; box-shadow: inset 0 1px #d9b576; }
+.window-list-item-box { border-radius: 0; border: 1px solid transparent; }
+.window-list-item-box:active, .window-list-item-box:hover { background-color: #4a3622; border: 1px solid #b99355; }

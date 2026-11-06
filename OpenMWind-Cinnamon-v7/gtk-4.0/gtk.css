@@ -1,0 +1,80 @@
+/* OpenMWind v3 — an unofficial Morrowind-inspired GTK theme. */
+@define-color theme_bg_color #211e19;
+@define-color theme_fg_color #d7bd86;
+@define-color theme_base_color #171612;
+@define-color theme_text_color #e0c998;
+@define-color theme_selected_bg_color #776039;
+@define-color theme_selected_fg_color #fff0c0;
+@define-color borders #927342;
+@define-color warning_color #e1a45d;
+@define-color error_color #c16c55;
+* { color: #d7bd86; caret-color: #e5c58d; -gtk-icon-style: symbolic; }
+window, dialog, .background, .view, .content, scrolledwindow, viewport {
+ background-color: #211e19; color: #d7bd86;
+}
+window, dialog { background-image: url("../assets/stone.png"); }
+headerbar, .titlebar, toolbar, menubar, .toolbar, .menubar {
+ background-color: #30271c; background-image: linear-gradient(to bottom,#695334,#2c251b 65%,#1b1915);
+ color: #f1d7a0; border-bottom: 2px solid #b08b4e; box-shadow: inset 0 1px #d3ac65;
+}
+headerbar { min-height: 34px; }
+headerbar label.title { font-weight: bold; color: #f2d5a0; }
+button, .button, spinbutton button, combobox button {
+ background-color: #403424;
+ background-image: linear-gradient(to bottom,#655034,#32291d);
+ color: #e8cb91; border: 2px ridge #9d7c48; border-radius: 1px;
+ box-shadow: inset 1px 1px #c09a5c, inset -1px -1px #241c14;
+ padding: 5px 10px; min-height: 18px;
+}
+button:hover { background-image: linear-gradient(to bottom,#81653c,#493723); color: #fff0c3; border-color: #d2a85d; }
+button:active, button:checked { background-image: linear-gradient(to bottom,#2a241c,#57462e); box-shadow: inset 2px 2px #1b1712; }
+button:disabled, label:disabled { color: #81745d; opacity: .72; }
+entry, textview, textview text, spinbutton, searchentry, .view, treeview.view, list, listbox, iconview {
+ background-color: #181712; color: #e0c998; border-color: #8b6b3d;
+}
+entry, spinbutton, searchentry { border: 2px inset #987645; border-radius: 0; padding: 5px; }
+entry:focus, spinbutton:focus, textview:focus { border-color: #d6ad63; outline-color: #d6ad63; }
+selection, *:selected, row:selected, treeview:selected, .view:selected { background-color: #78603a; color: #fff0c0; }
+menu, menuitem, popover, popover.background, .popover, .context-menu {
+ background-color: #29241b; color: #e5c993; border: 2px solid #a4864e; border-radius: 0;
+}
+menuitem, modelbutton { padding: 5px 10px; }
+menuitem:hover, modelbutton:hover, row:hover { background-color: #57452b; color: #ffe6ae; }
+notebook { background-color: #211d17; border: 2px ridge #997a47; }
+notebook header { background-color: #28231a; border-bottom: 1px solid #9e7d49; }
+notebook tab { padding: 6px 13px; background-color: #342b20; border: 1px solid #7f633b; }
+notebook tab:checked { background-color: #6c5433; color: #ffdda0; border-bottom-color: #d0a65d; }
+scrollbar { background-color: #191813; }
+scrollbar slider { background-color: #735a35; border: 1px solid #b08b4d; border-radius: 0; min-width: 10px; min-height: 10px; }
+scrollbar slider:hover { background-color: #a17d46; }
+trough { background-color: #171611; border: 1px solid #66502f; border-radius: 0; }
+scale highlight, progressbar progress, levelbar block.filled { background-color: #a7844d; border: 1px solid #d0a65e; border-radius: 0; }
+progressbar trough { min-height: 9px; }
+check, radio { background-color: #211c16; border: 2px solid #a98a50; color: #f5d493; border-radius: 0; }
+radio { border-radius: 50%; }
+check:checked, radio:checked { background-color: #816437; }
+separator { background-color: #84673e; min-height: 1px; min-width: 1px; }
+frame > border { border: 2px ridge #a0834c; border-radius: 0; }
+frame > label { color: #e8c58b; font-weight: bold; }
+tooltip, tooltip.background { background-color: #272119; color: #f3d6a2; border: 1px solid #b18a4d; border-radius: 0; }
+.link, link, label link { color: #d9b36f; }
+.link:hover, link:hover, label link:hover { color: #ffe2a2; }
+
+/* v2: stronger Morrowind-inspired recessed and engraved edges */
+window, dialog { border: 2px solid #b18a4b; box-shadow: inset 0 0 0 1px #e2be7a; }
+button { border: 2px solid #b58b4e; box-shadow: inset 1px 1px #e1bd7a, inset -1px -1px #21180f; }
+notebook, frame { border-color: #bb9455; }
+
+/* v3: stronger original ornamental panel styling */
+* { font-family: "EB Garamond", "Liberation Serif", serif; font-size: 12pt; }
+window, dialog, popover, menu, notebook, frame, .frame, .view, scrolledwindow { border-radius: 0; }
+window, dialog { background-color: #12100d; }
+headerbar, .titlebar { background-image: url("../assets/weathered-bronze.png"); background-size: auto 100%; min-height: 38px; }
+headerbar label.title, .titlebar .title, notebook tab label { font-family: "EB Garamond", "Liberation Serif", serif; font-weight: bold; font-size: 13pt; }
+frame > border, .frame, notebook, popover.background, menu { border: 5px solid transparent; border-image-source: url("../assets/engraved-frame.png"); border-image-slice: 32; border-image-width: 5px; border-image-repeat: stretch; background-color: #14120f; }
+button { border-width: 3px; border-style: ridge; border-color: #d4ae69 #664b2b #50391f #b68d50; padding: 5px 12px; }
+button label { font-family: "EB Garamond", "Liberation Serif", serif; font-weight: bold; }
+entry, searchentry, treeview, textview, listbox { background-color: #100f0b; }
+
+/* v7 gilded title-bar lettering against lighter sandstone */
+headerbar label.title, .titlebar .title { color: #25190d; text-shadow: 0 1px rgba(255,231,166,.5); }

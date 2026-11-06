@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=OpenMWind Cinnamon v7
+Comment=Unofficial engraved Morrowind-inspired Cinnamon theme
+Encoding=UTF-8
+[X-GNOME-Metatheme]
+GtkTheme=OpenMWind-Cinnamon-v7
+MetacityTheme=OpenMWind-Cinnamon-v7
+IconTheme=Adwaita
